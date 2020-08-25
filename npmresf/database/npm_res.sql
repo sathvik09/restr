@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 06, 2020 at 09:12 AM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Generation Time: Aug 25, 2020 at 04:16 PM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -116,6 +115,63 @@ INSERT INTO `menulist` (`category`, `dishname`, `price`, `description`, `mid`) V
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `reservations`
+--
+
+CREATE TABLE `reservations` (
+  `customer_fname` varchar(50) NOT NULL,
+  `customer_lname` varchar(50) NOT NULL,
+  `nop` int(4) NOT NULL,
+  `phone_no` bigint(100) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `reservations`
+--
+
+INSERT INTO `reservations` (`customer_fname`, `customer_lname`, `nop`, `phone_no`, `date`) VALUES
+('svvs', '$dfd', 3233, 3232233232, '3233-02-23'),
+('ergre', '$dfdfbf', 2332, 3242432322, '2332-04-23'),
+('sdvs', '$dfd', 1212, 39585400, '1212-02-23'),
+('Nikhil', 'sk', 2, 9986743899, '2020-08-28'),
+('Sathvik', 'kp', 3, 9986806485, '2020-07-31'),
+('Sathvik', 'kp', 2, 9986806485, '2020-08-15'),
+('Sathvik', 'kp', 2, 9986806485, '2020-08-22'),
+('Nikhil', 'sk', 2, 9986743899, '2020-08-08'),
+('Sathvik', 'kp', 3, 9986806485, '2020-08-09'),
+('Sathvik', 'kp', 2, 9986806485, '2020-08-13'),
+('Sathvik', 'kp', 2, 9986806485, '2020-08-08'),
+('Sathvik', 'kp', 2, 9986806485, '2020-08-08');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `restr`
+--
+
+CREATE TABLE `restr` (
+  `sno` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `type` varchar(50) NOT NULL,
+  `numCus` int(11) NOT NULL,
+  `totalCus` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `restr`
+--
+
+INSERT INTO `restr` (`sno`, `name`, `type`, `numCus`, `totalCus`) VALUES
+(1, 'Stockhome', 'dine_in', 6, 10),
+(2, 'Empire Restaurant', 'dine_in', 0, 10),
+(3, 'Burger_King', 'fast_food', 0, 10),
+(4, 'South_Kitchen', 'fast_food', 0, 10),
+(5, 'Meghana_Biriyani', 'dine_in', 0, 10);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -141,6 +197,12 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 --
 ALTER TABLE `menulist`
   ADD PRIMARY KEY (`mid`);
+
+--
+-- Indexes for table `restr`
+--
+ALTER TABLE `restr`
+  ADD PRIMARY KEY (`sno`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
