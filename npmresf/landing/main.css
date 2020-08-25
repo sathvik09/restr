@@ -1,8 +1,59 @@
 html, body {
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
 
 }
+
+#loader{
+      border: 16px solid #fdffb6;
+      border-radius: 50%;
+      border-top: 16px solid #457b9d;
+      width: 20em;
+      height: 20em;
+      animation: loader1 1.5s linear infinite;
+      margin: 5em;
+      
+    }
+    
+    #loader2{
+      border: 16px solid #caffbf;
+      border-radius: 50%;
+      border-top: 16px solid #3d405b;
+      width: 17em;
+      height: 17em;
+      animation: loader2 3s linear infinite;
+      margin: 0.75em;
+      
+    }
+    @keyframes loader1{
+      0%{transform:rotate(0deg;)}
+      100%{transform:rotate(360deg);}
+    }
+    @keyframes loader2{
+      0% {transform:rotate(360deg);}
+      100%{transform:rotate(0deg);}
+    }
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animateBottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animateBottom;
+      animation-duration: 1s
+    }
+    
+    @keyframes animateBottom { 
+      from{ bottom:-100px; opacity:0 } 
+      to{ bottom:0; opacity:1 }
+    }
+    
+    #whenDone {
+      display: none;
+      text-align: center;
+    }
 
 .content {
       width: 100%;
