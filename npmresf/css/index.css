@@ -1,0 +1,35 @@
+/* background cover page */
+body,
+html {
+  height: 95%;
+  margin: 10;
+
+  /* The image used */
+
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  background-position: center;
+}
+
+.content-title {
+  margin-top: 100px;
+  color: white;
+}

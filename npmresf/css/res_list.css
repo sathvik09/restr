@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 100vh;
+    background-color: #484849;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.table{
+    border: 1px solid black;
+    width: 50%;
+}
+
+.entries{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1c1c1c;
+}
+
+.entries button{
+    background-color: #1c1c1c;
+    border: none;
+    height: 10vh;
+    cursor: pointer;
+}
+
+.green{
+    color: green;
+}
+
+.yellow{
+    color: yellow;
+}
+.red{
+    color: red;
+}
