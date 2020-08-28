@@ -49,7 +49,13 @@ body {
         display: block;
         margin-bottom: 20px;
     }
+    
+               <input type="submit" name = "s1" value="register">
+               <input type="submit" name = "s2" value="check us out">
+               <input type="submit" name = "s3" value="free">
+            </form>
     } */
+    
 </style>
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -79,8 +85,8 @@ body {
       
       &nbsp;&nbsp;&nbsp;&nbsp;
       </nav>
-
     <br><br><br><br><br><br><br><br><br>
+    <form action="./landing/res_list.php" method='POST'>
       <div class="row">
       <div class="col mb-4 column" style="margin-left:3vw;">
   <div class="flip-card">
@@ -92,7 +98,7 @@ body {
     <div class="flip-card-back">
       <br>
       <br>
-      <a class="btn btn-warning" name ="mexican" href="mexican.php">Dine in</a>
+      <input type='submit' class="btn btn-warning" name ="s1" value="dine_in" />
     
     </div>
   </div>
@@ -109,7 +115,7 @@ body {
     <div class="flip-card-back">
       <br>
       <br>
-      <a class="btn btn-warning" name ="mexican" href="reserve.php">Reserve</a>
+      <input type='submit' class="btn btn-warning" name ="s3" value="Reserve" />
     
     </div>
   </div>
@@ -126,7 +132,7 @@ body {
     <div class="flip-card-back">
       <br>
       <br>
-      <a class="btn btn-warning" name ="mexican" href="mexican.php">FastFood/Takeaway</a>
+      <input type='submit' class="btn btn-warning" name ="s2" value="fast_food" />
     
     </div>
   </div>
@@ -153,5 +159,6 @@ body {
 </div>
 </div>
 
+</form>
 </body>
 </html>

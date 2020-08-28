@@ -6,15 +6,19 @@
 
 .body{
     height: 100vh;
-    background-color: #484849;
+    background-color: #1c1c1c;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .table{
-    border: 1px solid black;
     width: 50%;
+}
+
+.heading{
+    font-size: 50px;
+    color: blue;
 }
 
 .entries{
@@ -22,11 +26,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #1c1c1c;
+    background-color: #484849;
 }
 
 .entries button{
-    background-color: #1c1c1c;
+    background-color: #484849;
     border: none;
     height: 10vh;
     cursor: pointer;

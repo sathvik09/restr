@@ -1,94 +1,53 @@
-html, body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: black;
 }
 
-#loader{
-      border: 16px solid #fdffb6;
-      border-radius: 50%;
-      border-top: 16px solid #457b9d;
-      width: 20em;
-      height: 20em;
-      animation: loader1 1.5s linear infinite;
-      margin: 5em;
-      
-    }
-    
-    #loader2{
-      border: 16px solid #caffbf;
-      border-radius: 50%;
-      border-top: 16px solid #3d405b;
-      width: 17em;
-      height: 17em;
-      animation: loader2 3s linear infinite;
-      margin: 0.75em;
-      
-    }
-    @keyframes loader1{
-      0%{transform:rotate(0deg;)}
-      100%{transform:rotate(360deg);}
-    }
-    @keyframes loader2{
-      0% {transform:rotate(360deg);}
-      100%{transform:rotate(0deg);}
-    }
-    .animate-bottom {
-      position: relative;
-      -webkit-animation-name: animateBottom;
-      -webkit-animation-duration: 1s;
-      animation-name: animateBottom;
-      animation-duration: 1s
-    }
-    
-    @keyframes animateBottom { 
-      from{ bottom:-100px; opacity:0 } 
-      to{ bottom:0; opacity:1 }
-    }
-    
-    #whenDone {
-      display: none;
-      text-align: center;
-    }
-
-.content {
-      width: 100%;
-      height: 100vh;
-      background-color: #fff;
-      padding: 40px 0 40px 0;
+.head{
+  width: 70%;
+  margin: auto;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.hero-back {
-      width: 100%;
-      height: calc(100vh);
-      background: url('img.jpg') no-repeat 50% 50%;
-      background-size: cover;
-      position: relative;
+.heading{
+  font-weight: 200;
+  font-size: 50px;
+  color: aqua;
 }
 
-h1 {
-      font-family: Poppins;
-      color: #fff;
+.options{
+  height: 80vh;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-p {
-      font-family: Poppins;
-      line-height: 30px;
-      color: #fff;
-      font-weight: lighter;
+.back1,.back2{
+  background-color: blueviolet;
+  border-radius: 20px;
+  width: 15vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.hero-back img {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
+.back1 a{
+  text-decoration: none;
+  color: aliceblue;
 }
 
+.back2 a{
+  text-decoration: none;
+  color: aliceblue;
+}
