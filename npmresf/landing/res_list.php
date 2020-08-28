@@ -59,7 +59,7 @@ $conn ->select_db($db) or die( "Unable to select database");
 
               echo "<tr class='entries'>
                       <form method = 'POST' action='../reserve.php'>
-                      <td><button class='$color' type='submit' name = '$value' value='$row[name]'>$row[name]</button></td>
+                      <td><button class='$color' type='submit' name = 'value' value='$row[name]'>$row[name]</button></td>
                       </form>
                     </tr>";
           }

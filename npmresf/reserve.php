@@ -11,6 +11,7 @@
   $value = '';
   if(isset($_POST['value']))
   {
+      echo "dsa";
       $value = $_POST['value'];
   }
 
