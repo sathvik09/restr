@@ -31,7 +31,7 @@ $conn ->select_db($db) or die( "Unable to select database");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/res_list.css?version=50">
+    <link rel="stylesheet" href="../css/res_list.css?version=92">
 </head>
 <body>
     <div class="body">
@@ -40,6 +40,7 @@ $conn ->select_db($db) or die( "Unable to select database");
         <th class='heading'><?php echo $value ?></th>  
         </tr>
        <?php
+       
        if($isTrue){
           foreach($result as $row)
           {
@@ -76,7 +77,7 @@ $conn ->select_db($db) or die( "Unable to select database");
               {
                 $color = 'yellow';
               }
-              elseif($row['numCus']<=10)
+              elseif($row['numCus']>=8)
               {
                 $color = 'red';
               }

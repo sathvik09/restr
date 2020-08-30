@@ -33,7 +33,7 @@ if(isset($_POST["upload"]))
     mysqli_query($conn, $query);
    }
    fclose($handle);
-   header("location: csvf.php");
+   header("location: ./landing/index.php");
   }
   else
   {

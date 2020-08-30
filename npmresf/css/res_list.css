@@ -34,17 +34,18 @@
   border: none;
   height: 10vh;
   cursor: pointer;
+  font-size: 30px;
 }
 
 .green {
-  color: green;
+  background-color: green !important;
 }
 
 .yellow {
-  color: yellow;
+  color: yellow !important;
 }
 .red {
-  color: red;
+  color: red !important;
 }
 /* .entries {
   height: 10vh;

@@ -22,7 +22,7 @@
     $totalcus=0;
     $q1=mysqli_query($conn,"Insert into restr values('$sno','$name','$category','$nunmcus','$totalcus')");
     
-header('location:./landing/index.php');
+header('location:csvf.php');
   }
 
 ?>
