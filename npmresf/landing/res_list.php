@@ -52,14 +52,14 @@ $conn ->select_db($db) or die( "Unable to select database");
               {
                 $color = 'yellow';
               }
-              elseif($row['numCus']<=10)
+              elseif($row['numCus']>=8)
               {
                 $color = 'red';
               }
 
               echo "<tr class='entries'>
                       <form method = 'POST' action='../reserve.php'>
-                      <td><button class='$color' type='submit' name = 'value' value='$row[name]'>$row[name]</button></td>
+                      <td class='$color'><button  type='submit' name = 'value' value='$row[name]'>$row[name]</button></td>
                       </form>
                     </tr>";
           }

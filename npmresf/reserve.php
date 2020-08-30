@@ -11,7 +11,7 @@
   $value = '';
   if(isset($_POST['value']))
   {
-      echo "dsa";
+     // echo "dsa";
       $value = $_POST['value'];
   }
 
@@ -90,7 +90,7 @@
                     <div class="row input-main">
                         <div class="col-md-12 btn-row">
                             <span class="input-group-btn">
-                                <button class='btn-sub' href="" type="submit" name='value' value='<?php echo $value?>' class="btn btn-form btn-secondary display-4">Send</button>
+                                <button class='btn-sub' type="submit" name='value' value='<?php echo $value?>' class="btn btn-form btn-secondary display-4">Send</button>
                             </span>
                         </div>
                     </div>
@@ -98,11 +98,12 @@
             </div>
         </div>
         <script>
-            let x = document.querySelector('.btn-subb');
+            let x = document.querySelector('.btn-sub');
 
             x.addEventListener('click',()=>{
                 alert("Thanks for submiitting")
-            })
+                window.setTimeout(function(){ window.location="./landing.php"; }, 0);
+                })
         </script>
    </div>
 </section>

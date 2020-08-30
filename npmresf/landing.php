@@ -60,27 +60,27 @@ body {
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand/logo -->
-    <a class="navbar-brand" href="index.php">GOURMET</a>
+    <a class="navbar-brand" href="">GOURMET</a>
     
           <ul class="nav navbar-nav navbar-right" style="margin-left:50vw;">
  
      
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Dine-In</a>
+        <a class="nav-link" href="">Dine-In</a>
       </li>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <li class="nav-item ">
-        <a class="nav-link" href="reserve.php">Reservation</a>
+        <a class="nav-link" href="">Reservation</a>
       </li>
 
       &nbsp;&nbsp;&nbsp;&nbsp;
       <li class="nav-item">
-        <a class="nav-link" href="login.php">FastFood/Takeaway</a>
+        <a class="nav-link" href="">FastFood/Takeaway</a>
       </li>
       
       &nbsp;&nbsp;&nbsp;&nbsp;
       <li class="nav-item">
-        <a class="nav-link" href="login.php">Food Freelancers</a>
+        <a class="nav-link" href="">Food Freelancers</a>
       </li>
       
       &nbsp;&nbsp;&nbsp;&nbsp;
@@ -160,5 +160,9 @@ body {
 </div>
 
 </form>
+<div style="margin-left:85vw;margin-top:2vw;">
+    
+<a class="btn btn-primary" href="./landing/index.php">Go to home page</a>
+</div>
 </body>
 </html>

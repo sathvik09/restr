@@ -13,7 +13,7 @@
       </div>
       <div class="options">
             <div class="back1"><a href="../landing.php" class="one">Check Us out</a></div>
-            <div class="back2"><a href="" class="one">Register</a></div>
+            <div class="back2"><a href="../registration.php" class="one">Register</a></div>
       </div>
 </body>
 </html>

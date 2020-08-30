@@ -1,48 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.body{
-    height: 100vh;
-    background-color: #1c1c1c;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.body {
+  height: 100vh;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.table{
-    width: 50%;
+.table {
+  width: 50%;
 }
 
-.heading{
-    font-size: 50px;
-    color: blue;
+.heading {
+  font-size: 50px;
+  color: blue;
 }
 
-.entries{
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #484849;
+.entries {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #484849;
 }
 
-.entries button{
-    background-color: #484849;
-    border: none;
-    height: 10vh;
-    cursor: pointer;
+.entries button {
+  background-color: #484849;
+  border: none;
+  height: 10vh;
+  cursor: pointer;
 }
 
-.green{
-    color: green;
+.green {
+  color: green;
 }
 
-.yellow{
-    color: yellow;
+.yellow {
+  color: yellow;
 }
-.red{
-    color: red;
+.red {
+  color: red;
 }
+/* .entries {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: none;
+}
+
+.entries td {
+  background-color: none;
+  width: 100%;
+}
+
+button {
+  background-color: none;
+  border: none;
+  height: 10vh;
+
+  cursor: pointer;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+} */
